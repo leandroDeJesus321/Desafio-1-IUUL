@@ -1,0 +1,157 @@
+
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG: rgb(97, 83, 216);
+    --Cor-Texto: white;
+}
+/*===================== MENU DE NAVEGAÇÃO =====================*/
+/*Preenchimento  do cabeçalho do menu e alinhamento dos itens*/
+
+.menu{
+    width: 100%;
+    align-items: center;
+}
+
+/*
+    barra de navegação - ajustando espaçamento do logo e botões
+    altura e margen nas laterais
+*/
+
+.nav-bar{
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+} 
+
+/*
+    Lista dos botões
+    colocar itens na horizontal, centralizando alinhamento
+*/
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Ajuste do afastamento entre os botões, cursor, cor das letras e posicionamento*/
+
+.nav-bar ul li{
+    
+    margin: 0 0.5em;
+    cursor: pointer;
+    color: var(--Cor-Texto);
+    position: relative;
+}
+
+/* Trocando a cor dos botões dos links*/
+
+.nav-bar ul li a{
+    align-items: center;
+    text-decoration: none;
+
+    border: 1.5px solid var(--Cor-BG);
+    padding: 0.5em;
+    border-radius: 10px;
+
+    color: var(--Cor-Texto);
+    font-size: 0.9em;
+}
+
+.nav-bar ul li a:hover{
+    background-color: var(--Cor-BG);
+}
+
+/*Fazendo os botões internos de Formação e portfólio não ficarem a mostra*/
+
+.nav-bar ul ul{
+    display: none;
+    margin: 0;
+}
+
+/*===================== TÍTUTLOS =====================*/
+
+.titulo{
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+/*===================== RODAPÉ =====================*/
+
+/*------------------ REDES SOCIAIS -----------------*/
+
+/*Ajustando preenchimento do rodapé, posição e alinhamento dos itens*/
+.rodape{
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+
+    margin-top: 0.5em;
+}
+
+/*Preenchimento das redes sociais, espaçamento entre o texto e os ícones e margen nas laterais*/
+
+.rede-sociais{
+    height: 3em;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 1em 0 1em;
+    line-height: 50%;
+}
+
+/*Colocando os ícones na horizontal*/
+
+.rede-sociais ul{
+    display: flex;
+    align-items: center;
+}
+
+/*Afastamento entre os ícones*/
+
+.rede-sociais ul li{
+    margin: 0 0.5em;
+}
+
+.rede-sociais h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rede-sociais ul li a svg:hover{
+    color: brown;
+}
+/*===================== MEDIA QUERY =============*/
+
+/*Barra de navegação dropdown*/
+
+@media (max-width: 768px) {
+    
+}
+
+/*===================== COPYRIGHT ===============*/
+
+/*Barra de copyright, preenchimento do espaço e distribuição dos itens*/
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2em;
+}
+
+.copyright a{
+    text-decoration: none;
+}
+.copyright a:hover{
+    color: var(--Cor-BG);
+}

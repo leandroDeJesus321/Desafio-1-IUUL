@@ -1,0 +1,26 @@
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG-Container: #3E3E3E;
+    --Cor-BG: #47C4EB;
+}
+
+/*===================== CORPO PRINCIPAL =============================*/
+
+/*Corpo de texto, à direita*/
+.sobre-mim{
+    margin:  0 auto;
+}
+.sobre-mim h1{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    border-bottom: 0.1em solid var(--Cor-BG);
+}
+
+.sobre-foto{
+    margin: 0 auto;
+}

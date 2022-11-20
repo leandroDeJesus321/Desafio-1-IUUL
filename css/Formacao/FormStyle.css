@@ -1,0 +1,68 @@
+
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG-Container: #3E3E3E;
+    --Cor-BG-Card: #c5c5c5;
+    --Cor-BG: rgb(97, 83, 216);
+    --Cor-card: rgb(97, 83, 216);
+}
+
+/*===================== CORPO PRINCIPAL =======================*/
+
+body{
+    width: 100%;
+}
+
+/*Ajustando preenchimento do container e disposição dos itens no container*/
+
+.container{
+    width: 100%;
+    height: 31em;
+    margin: 1em;
+    padding: 0;
+    
+    border-radius: 1em;
+
+    background-color: var(--Cor-BG-Container);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.1em;
+    align-items: center;
+}
+
+/*===================== CARDS A ESQUERDA =======================*/
+
+.card-esq{
+    width: 100%;
+    
+}
+
+.card-esq ul li{
+    width: 100%;
+    margin-top: 1em;
+    background-color: var(--Cor-card);
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*===================== CARDS A DIREITA =======================*/
+
+.card-dir{
+    width: 100%;
+}
+
+.card-dir ul li{
+    width: 100%;
+    margin-top: 1em;
+    background-color: var(--Cor-card);
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+}

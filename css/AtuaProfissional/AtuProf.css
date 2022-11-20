@@ -1,0 +1,62 @@
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG-Container: #3E3E3E;
+    --Cor-BG: rgb(97, 83, 216);
+    --Cor-Card-BG: rgb(179, 179, 179);
+}
+
+/*===================== CORPO PRINCIPAL =====================*/
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Estilo do conteúdo da página principal*/
+
+.container{
+    width: 100%;
+    height: 31em;
+    margin: 1em;
+
+    background: var(--Cor-BG-Container);
+
+    border-radius: 1em;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 90%;
+}
+
+/*Ajustando as barras de informações, centralizando, alinhando itens na horizontais*/
+
+.container section{
+    margin: 0 auto 1em;
+    padding: 0.5em 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 1.5px solid var(--Cor-BG);
+    
+}
+
+/*
+Ajustando título do card: tamanho, peso, margem entre o texto e linha separando texto do título*/
+
+.container section h2{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    padding: 0 0 0.2em 0;
+    border-bottom: 0.2em solid var(--Cor-BG);
+}
+
+/*afastando texto da foto*/
+
+.container section div{
+    margin-left: 1.5em;
+}

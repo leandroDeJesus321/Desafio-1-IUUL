@@ -1,7 +1,8 @@
 $(function(){
-    $('#rodape').load('../components/rodape.html');
+    $("#nav").load("/components/Menu.html");
 });
 
 $(function(){
-    $('#nav').load('../components/Menu.html')
+    $('#rodape').load('/components/Rodape.html');
 });
+
