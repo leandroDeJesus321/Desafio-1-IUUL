@@ -9,8 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
     <!-- CSS estilo geral-->
-    <link rel="stylesheet" href="../../css/EstiloGeral.css">
+    <link rel="stylesheet" href="/css/ComponentsEstilo/EstiloComponent.css">
+    <!--Estilo próprio-->
+    <link rel="stylesheet" href="/css/Contato/Contato.css">
 
     <!--importando Jquery para permitir importação de arquivo html em outro html-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,17 +32,21 @@
 
         <!--Mídias sociais-->
 
-        <section>
+        <section class="redes-sociais">
 
-            <h3>Fale comigo</h3>
+            <h3 class="titulo">Minhas redes sociais</h3>
 
             <p>
                 Envie-me uma mensagem para que possamos entrar em contato sobre futuro projetos
-                e siga minhas redes sociais
+                e siga minhas redes sociais abaixo.
             </p>
 
+            <!--Redes sociais-->
+
             <ul>
+
                 <!--instagram-->
+
                 <li>
                     <a href="https://www.instagram.com/leandrodejesus203/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -49,6 +56,7 @@
                 </li>
 
                 <!--Github-->
+
                 <li>
                     <a href="https://github.com/doomquest3" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -58,6 +66,7 @@
                 </li>
 
                 <!--Linkedin-->
+
                 <li>
                     <a href="#" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -67,6 +76,7 @@
                 </li>
 
                 <!--Twitter-->
+
                 <li>
                     <a href="https://twitter.com/Leandro93382" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -78,23 +88,26 @@
 
         </section>
 
-        <!--Contato-->
+        <!--Formulario contato-->
 
-        <section>
-
-            <h1>Contato</h1>
+        <section class="form-contato">   
 
             <form>
+
                 <fieldset>
-                    <legend>Entre em contato comigo</legend>
-                    <input type="text" placeholder="Digite aqui seu nome" required>
+
+                    <legend class="titulo">Entre em contato</legend>
+                    <input class="dado-form" type="text" placeholder="Digite aqui seu nome" required>
                     <br>
-                    <input type="email" name="" id="" placeholder="Digite aqui seu email" required>
+                    <input class="dado-form" type="email"  placeholder="Digite aqui seu email" required>
                     <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem" required>
+                    <textarea class="area-form" cols="30" rows="10" placeholder="Digite sua mensagem" required>
+                        
                     </textarea>
-                    <button>Enviar</button>
+                    <button class="botao">Enviar</button>
+
                 </fieldset>
+
             </form>
         </section>
 

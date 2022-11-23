@@ -10,35 +10,64 @@
 
 /*===================== CORPO PRINCIPAL =======================*/
 
-body{
-    width: 100%;
-}
-
 /*Ajustando preenchimento do container e disposição dos itens no container*/
 
 .container{
     width: 100%;
-    height: 31em;
-    margin: 1em;
+    height: 100%;
+    
     
     border-radius: 1em;
+    padding: 0.5em;
 
     background-color: var(--Cor-BG-Container);
+
     display: grid;
     grid-template-columns: 100%;
+    gap: 1em;
+    
+    align-items: center;
+    justify-content: center;
+    
 }
 
 /*===================== CARD PROJETO =======================*/
 
 
 .card-projeto{
+
     width: 60%;
+    min-height: 10em;
+
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 0.5em auto;
+    justify-self: center;
+    
+    padding: 0.2em;
+    
     border: 1.5px solid var(--Cor-card);
 
-    padding: 0 1em;
+    background-color: var(--Cor-BG);
     
+}
+
+.card-projeto div{
+    margin-left: 1em;
+}
+
+
+@media(max-width:768px){
+    
+    .card-projeto{
+        height: 100%;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+
+        text-align: center;
+
+        margin: 0.5em auto;
+        
+    }
 }

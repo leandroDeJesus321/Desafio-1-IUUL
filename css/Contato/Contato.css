@@ -1,0 +1,127 @@
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG-Container: #3E3E3E;
+    --Cor-BG: rgb(97, 83, 216);
+    --Form-BG:#585858;
+    --Form-bar: #D9D9D9;
+}
+
+/*===================== CORPO PRINCIPAL =======================*/
+
+body{
+    width: 100%;
+}
+
+/*Ajustando preenchimento do container e disposição dos itens no container*/
+
+.container{
+    width: 100%;
+    height: 31em;
+    margin: 1em;
+    padding: 0;
+    
+    border-radius: 1em;
+
+    background-color: var(--Cor-BG-Container);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.1em;
+    align-items: center;
+}
+
+
+/*===================== REDES SOCIAIS =======================*/
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+/*Ajuste no título e barra inferior*/
+
+.titulo{
+    border-bottom: 0.05em solid var(--Cor-BG);
+    margin-bottom: 0.5em;
+}
+
+/*Descrição das redes sociais*/
+
+.redes-sociais p{
+    margin-bottom: 1em;
+    width: 65%;
+}
+
+
+/*Lista das redes sociais - alinhando na horizontal*/
+
+.redes-sociais ul{
+    display: flex;
+}
+
+/*Espaçamento entre os ícones*/
+
+.redes-sociais ul li{
+    margin: 0 1em;
+}
+
+/*===================== FORMULÁRIO E-MAIL =======================*/
+
+.form-contato form{
+    background-color: var(--Form-BG);
+    padding: 1em;
+}
+
+.form-contato form fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato form fieldset legend{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.dado-form{
+    width: 100%;
+    height: 2.5em;
+    
+    
+    background-color: var(--Form-bar);
+    color: black;
+    border: 2.5px solid var(--Cor-BG);
+
+    cursor: pointer;
+}
+
+.area-form{
+    background-color: var(--Form-bar);
+    color: black;
+
+    border: 2.5px solid var(--Cor-BG);
+    margin-bottom: 1em;
+    cursor: pointer;
+
+}
+
+.botao{
+    width: 25%;
+    height: 2.5em;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--Cor-BG);
+    align-self: flex-end;
+    color: #fff;
+
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.botao:hover{
+    transform: scale(1.1)
+}

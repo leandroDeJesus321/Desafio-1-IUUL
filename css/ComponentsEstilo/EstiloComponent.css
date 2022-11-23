@@ -107,6 +107,7 @@
 
     padding: 0 1em 0 1em;
     line-height: 50%;
+    
 }
 
 /*Colocando os ícones na horizontal*/
@@ -130,13 +131,6 @@
 .rede-sociais ul li a svg:hover{
     color: brown;
 }
-/*===================== MEDIA QUERY =============*/
-
-/*Barra de navegação dropdown*/
-
-@media (max-width: 768px) {
-    
-}
 
 /*===================== COPYRIGHT ===============*/
 
@@ -154,4 +148,19 @@
 }
 .copyright a:hover{
     color: var(--Cor-BG);
+}
+
+/*===================== MEDIA QUERY =============*/
+
+/*Barra de navegação dropdown*/
+
+@media (max-width: 768px) {
+    .rede-sociais{
+        flex-wrap: wrap;
+
+    }
+
+    .rede-sociais ul{
+        margin: 1em auto;
+    }
 }

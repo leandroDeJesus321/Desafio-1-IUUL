@@ -9,8 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
     <!-- CSS estilo geral-->
-    <link rel="stylesheet" href="../../css/EstiloGeral.css">
+    <link rel="stylesheet" href="/css/EstiloGeral.css">
+    <!--Estilo próprio-->
+    <link rel="stylesheet" href="/css/DesTec/DesTec.css">
 
     <!--importando Jquery para permitir importação de arquivo html em outro html-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,62 +29,91 @@
     <!-- contéudo principal da descrição de tecnologia-->
     <main class="container">
 
-        <!--Card de tecnologia Javascript-->
+            <!--Card de tecnologia HTML-->
 
-        <section>
+        <section id="HTML" class="card-tech">
+
+            <div>
+                <img width="100px" height="100px" src="/image/Logo/HTML-logo.png" alt="Ícone HTML">
+
+                <p>
+                    é uma linguagem de marcação de hipertexto,
+                    que usa elementos para representar conteúdos específicos dentro de uma página.
+                    Os elementos do HTML são responsáveis pela informação que vai ser exibida para o usuário, 
+                    porém não em como será o estilo e formato a ser exibido.
+
+                </p>
+            </div>
+
+            <ul>
+                <li>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Site oficial</a>
+                </li>
+                    
+                <li>
+                    <a target="_blank" href="https://www.geeksforgeeks.org/advantages-and-disadvanatges-of-html/ ">Pros e contras</a>
+                </li>
                 
-            <iframe width="430" height="258" src="https://www.youtube.com/embed/TkD0QMyBa28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <li>
+                    <a target="_blank" href="https://careerkarma.com/blog/who-uses-html/#:~:text=Web%20developers%20use%20HTML%20in,Tencent%2C%20Baidu%2C%20and%20YouTube.">Companhias que utilizam</a>
+                </li>
+            </ul>
+                
+        </section>
+
+        <!-- Card de CSS -->
+
+        <section id="CSS" class="card-tech">
+            <div>
+                <img width="100px" height="100px" src="/image/Logo/CSS-logo.png" alt="Ícone CSS">
+                <p>
+                    CSS, denominado Cascading Style Sheets ou  Folha de Estilo em Cascatas, é um mecanismo para adicionar estilo a um documento web, HTML. 
+                    O código CSS pode ser aplicado diretamente nas tags ficando contido dentro das tags "style".
+                    É possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">Site oficial</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-css/">Prós e ContrasS</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Companhias que utilizam</a>
+                </li>
+            </ul>
+        </section>
+
+        <!--Card de tecnologia Reactjs-->
+
+        <section id="ReactJS" class="card-tech">
             
+            <div>
+                <img width="100px" height="100px" src="/image/Logo/React-icon.png" alt="Ícone ReactJS">
+
+                <p>
+                    O React, também denominado React.js ou ReactJS, é uma biblioteca Front-end JavaScript 
+                    de código aberto com foco em criar interfaces de usuário em páginas web.
+                </p>
+            </div>
+
             <!--Lista de informações da tecnologia-->
             
             <ul>
                 <li>
-                    <h1>Javascript</h1>
+                    <a target="_blank" href="https://pt-br.reactjs.org/">Site oficial</a>
                 </li>
                 <li>
-                    <h4>Site oficial - JavaScript</h4>
-                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Link de acesso</a>
+                    <a target="_blank" href="https://matchboxdesigngroup.com/blog/the-pros-and-cons-of-using-reactjs/">Pros e contras</a>
                 </li>
                 <li>
-                    <h4>Pros e contras - JavaScript</h4>
-                    <a href="https://www.pangea.ai/dev-javascript-resources/best-practices/" target="_blank">Link de acesso</a>
-                </li>
-                <li>
-                    <h4> 10 maiores companhias que utilizam JavaScript</h4>
-                    <a href="https://www.ironhack.com/us/en/blog/10-major-companies-using-javascript" target="_blank">Link de acesso</a>
+                    <a target="_blank" href="https://www.tatvasoft.com/outsourcing/2022/02/top-10-successful-companies-using-react-js.html">Companhias que utilizam</a>
                 </li>
             </ul>
 
         </section>
 
-            <!--Card de tecnologia HTML-->
-
-        <section>
-
-            <iframe width="430" height="258" src="https://www.youtube.com/embed/3a9Qd026DOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <ul>
-                <li>
-                    <h1>HTML</h1>
-                </li>
-
-                <li>
-                    <h4>Site oficial - HTML</h4>
-                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Link de acesso</a>
-                </li>
-                    
-                <li>
-                    <h4>Pros e contras - HTML</h4>
-                    <a target="_blank" href="https://www.geeksforgeeks.org/advantages-and-disadvanatges-of-html/ ">Link de acesso</a>
-                </li>
-                
-                <li>
-                    <h4>Companhias que utilizam HTML</h4>
-                    <a target="_blank" href="https://careerkarma.com/blog/who-uses-html/#:~:text=Web%20developers%20use%20HTML%20in,Tencent%2C%20Baidu%2C%20and%20YouTube.">Site oficial</a>
-                </li>
-            </ul>
-                
-        </section>
     </main>
     
     <!--Rodapé-->       

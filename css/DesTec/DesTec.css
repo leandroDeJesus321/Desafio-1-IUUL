@@ -1,0 +1,88 @@
+/*===================== VARIÁVEIS =============================*/
+
+:root{
+    /*Cores*/
+    --Cor-BG-Container: #3E3E3E;
+    --Cor-BG: rgb(97, 83, 216);
+    --Form-BG:#585858;
+    --Form-bar: #D9D9D9;
+    --Cor-icon: rgb(173, 24, 24);
+}
+
+/*===================== CORPO PRINCIPAL =======================*/
+
+body{
+    width: 100%;
+}
+
+/*Ajustando preenchimento do container e disposição dos itens no container*/
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+    padding: 0.5em;
+    
+    border-radius: 1em;
+
+    background-color: var(--Cor-BG-Container);
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1em;
+    align-items: center;
+}
+
+/*Ajustando card de tecnologias*/
+
+.card-tech{
+    width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    padding: 1em;
+
+    background-color: var(--Cor-BG);
+    
+}
+
+/*Último card de tecnologia terá espaçamento do fundo do main*/
+
+.card-tech:nth-child(3){
+    margin-bottom: 0.5em;
+}
+
+/*alinhando icone e texto de descrição*/
+
+.card-tech div{
+    display: flex;
+    align-items: center;
+}
+
+/*Ajustando paragrafo de texto*/
+
+.card-tech div > p{
+    width: 60%;
+    margin: 0 auto 0.5em;
+    
+}
+
+/*Ajustando links na horizontal*/
+
+.card-tech ul{
+    display: flex;
+    margin: 0 auto;
+}
+
+/*Ajustando cor dos links e espaçamento entre eles*/
+
+.card-tech ul li > a{
+    margin: 0 0.2em;
+    color: var(--Form-bar);
+}
+
+/*Efeito ao passar o mouse sobre os links*/
+
+.card-tech ul li > a:hover{
+    color: var(--Cor-icon);
+}

@@ -33,6 +33,7 @@ body{
 /*Ajustando as barras de informações, centralizando, alinhando itens na horizontais*/
 
 .container section{
+    width: 75%;
     margin: 0 auto 1em;
     padding: 0.5em 2em;
 
