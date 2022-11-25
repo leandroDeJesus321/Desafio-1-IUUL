@@ -5,24 +5,49 @@
     /*Cores*/
     --Cor-BG: rgb(97, 83, 216);
     --Cor-Texto: white;
+    --Cor-BG-B: #0F0F0F;
 }
+
+body{
+    width: 100%;
+}
+
 /*===================== MENU DE NAVEGAÇÃO =====================*/
 /*Preenchimento  do cabeçalho do menu e alinhamento dos itens*/
 
 .menu{
     width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 1em;
+    
 }
 
+/*Menu hamburguer*/
+
+.menu-hamburguer{
+    display: none;
+    padding: 0.75em 0.25em;
+}
+
+.btn-hamburguer{
+    display: none;
+    width: 3em;
+    height: 0.35em;
+    border-radius: 1em;
+    background-color: var(--Cor-Texto);
+}
 /*
     barra de navegação - ajustando espaçamento do logo e botões
     altura e margen nas laterais
 */
 
 .nav-bar{
-    height: 3em;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 2em;
 } 
@@ -45,12 +70,13 @@
     margin: 0 0.5em;
     cursor: pointer;
     color: var(--Cor-Texto);
-    position: relative;
+    
 }
 
 /* Trocando a cor dos botões dos links*/
 
 .nav-bar ul li a{
+    
     align-items: center;
     text-decoration: none;
 
@@ -107,7 +133,7 @@
 
     padding: 0 1em 0 1em;
     line-height: 50%;
-    
+    flex-wrap: wrap;
 }
 
 /*Colocando os ícones na horizontal*/
@@ -120,6 +146,7 @@
 /*Afastamento entre os ícones*/
 
 .rede-sociais ul li{
+    
     margin: 0 0.5em;
 }
 
@@ -150,17 +177,99 @@
     color: var(--Cor-BG);
 }
 
+
+
 /*===================== MEDIA QUERY =============*/
+
+
 
 /*Barra de navegação dropdown*/
 
-@media (max-width: 768px) {
-    .rede-sociais{
-        flex-wrap: wrap;
+/*Link das redes sociais*/
 
+@media (max-width: 768px) {
+    .nav-bar{
+        display: none;
     }
 
+    .rede-sociais{
+        margin: 1em 0;
+    }
     .rede-sociais ul{
         margin: 1em auto;
     }
+
+    .rede-sociais h2{
+        font-size: 1.25em;
+    }
+    /*R*/
+    .menu{
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .menu-hamburguer{
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        transition: all .5s ease-in-out;
+        
+
+    }
+    .btn-hamburguer{
+        display: inline;
+        transition: all .5s ease-in-out;
+    }
+    
+    /*Criando as barras superior e inferior do hamburguer*/
+
+    .btn-hamburguer::before, 
+    .btn-hamburguer::after{
+
+        content: '';
+
+        width: 3em;
+        height: 0.35em;
+
+        border-radius: 1em;
+
+        position: absolute;
+
+        background-color: var(--Cor-Texto);
+
+        transition: all .5s ease-in-out;
+
+    }
+
+    .btn-hamburguer::before{
+        transform: translateY(-16px);
+    }
+
+    .btn-hamburguer::after{
+        transform: translateY(16px);
+    }
+
+    .menu-hamburguer.abrir .btn-hamburguer{
+        transform: translateX(-50px);
+        background-color: transparent;
+    }
+
+    .menu-hamburguer.abrir .btn-hamburguer::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-hamburguer.abrir .btn-hamburguer::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+
+    /*================ Barra de navegação lateral ================*/
+
+
+    
+    
 }

@@ -31,7 +31,7 @@ body{
     gap: 1em;
     align-items: center;
 }
-
+/*===================== CARDS DE TECNOLOGIAS =======================*/
 /*Ajustando card de tecnologias*/
 
 .card-tech{
@@ -40,7 +40,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto 0;
-    padding: 1em;
+    padding: 0.5em 0;
 
     background-color: var(--Cor-BG);
     
@@ -74,7 +74,7 @@ body{
     margin: 0 auto;
 }
 
-/*Ajustando cor dos links e espaçamento entre eles*/
+/*Ajustando espaçamento entre os links e a cor do link*/
 
 .card-tech ul li > a{
     margin: 0 0.2em;
@@ -85,4 +85,16 @@ body{
 
 .card-tech ul li > a:hover{
     color: var(--Cor-icon);
+}
+
+/*===================== RESPONSIVIDADE =======================*/
+
+@media (max-width: 768px) {
+    .card-tech{
+        width: 95%;
+    }
+    .card-tech div{
+        flex-direction: column;
+        text-align: center;
+    }
 }

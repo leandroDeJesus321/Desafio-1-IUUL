@@ -20,10 +20,15 @@
 <body>
     <!-- Menu principal da página -->
     <header class="menu">
+        <img src="#" alt="Logo do Leandro">
+        
+        <div class="menu-hamburguer" onclick="eventClick()">
+            <div class="btn-hamburguer"></div>
+                
+        </div>
         <nav class="nav-bar">
-            <img src="#" alt="Logo do Leandro">
-
-            <ul>
+            
+            <ul class="nav-list">
                 <li><a href="/views/Index/">Página Principal</a></li>
                 <li><a href="/views/Sobre/SobreMim.html">Sobre mim</a></li>
                 <li><a href="/views/Formacao/Formacao.html">Formação</a></li>
@@ -32,7 +37,11 @@
                 <li><a href="/views/DescTec/DescTecnologica.html">Descrição tecnologia</a></li>
                 <li><a href="/views/Contato/Contato.html">Contato</a></li>
             </ul>
-        </nav>
+
+            </nav>
+        
+
     </header>
+    <script src="/js/btnHamb.js"></script>
 </body>
 </html>
