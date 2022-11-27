@@ -17,7 +17,7 @@ body{
 
 .container{
     width: 100%;
-    height: 100%;
+    min-height: 31em;
 
     margin: 1em;
     padding: 0.5em;
@@ -42,7 +42,7 @@ body{
 
 .card-prof{
     width: 55%;
-    height: 15.5em;
+    height: 100%;
     margin: 0 auto 0;
     padding: 0.5em 2em;
 
