@@ -10,8 +10,3 @@ function clickHandler() {
     })
     
 }
-
-var btn = document.getElementById("btn-list");
-
-var btn_list = btn.getElementsByTagName('a');
-

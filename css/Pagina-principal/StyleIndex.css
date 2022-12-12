@@ -67,6 +67,9 @@ body{
     border-radius: 1em;
 }
 
+.nav-bar ul li:nth-child(1)>a{
+    background-color: var(--Cor-BG);
+}
 
 /*===================== MEDIA QUERY =====================*/
 

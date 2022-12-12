@@ -92,21 +92,21 @@
 
         <section class="form-contato">   
 
-            <form>
+            <form id="form-email">
 
                 <fieldset>
 
                     <legend class="titulo">Entre em contato</legend>
-                    <input class="dado-form" type="text" placeholder="Digite aqui seu nome" required>
+                    <input class="dado-form" id="name-form" type="text" placeholder="Digite aqui seu nome" required>
                     <br>
-                    <input class="dado-form" type="email"  placeholder="Digite aqui seu email" required>
+                    <input class="dado-form" id="email-form" type="email"  placeholder="Digite aqui seu email" required>
                     <br>
-                    <textarea class="area-form" cols="30" rows="10" placeholder="Digite sua mensagem" required>
+                    <textarea class="area-form" id="text-form" cols="30" rows="10" placeholder="Digite sua mensagem" required>
                         
                     </textarea>
                     <div class="form-btn">
                         <a href="/views/mensagens/msg.html">Mensagens</a>
-                        <button class="botao">Enviar</button>
+                        <button onclick="adicionarMensagem()" class="botao">Enviar</button>
                     </div>
 
                 </fieldset>
@@ -121,6 +121,6 @@
 
     <!--Script para adicionar os components do menu-->
     <script src="/js/component.js"></script>
-
+    <script src="/js/messages/msg.js"></script>
 </body>
 </html>

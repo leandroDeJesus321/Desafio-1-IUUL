@@ -85,6 +85,10 @@ body{
     border-bottom: 0.2em solid var(--Cor-BG);
 }
 
+.nav-bar ul li:nth-child(3)>a{
+    background-color: var(--Cor-BG);
+}
+
 @media( max-width: 768px){
     
     .card-esq ul li{

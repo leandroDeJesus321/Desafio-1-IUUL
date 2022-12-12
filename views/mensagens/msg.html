@@ -35,91 +35,18 @@
 
         <!--Sesão de mensagens-->
 
-        <section class="comment-section">
+        <section class="comment-section" id="comment-list">
 
             <!--Card de comentários-->
 
-            <div class="comment-card">
-
-                <h2>Leandro de jesus cavalcante da silva</h2>
-
-                <h3>email@gmail.com</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Ullam a sit architecto, 
-                    reiciendis at, 
-                    veniam pariatur facere quibusdam nisi porro, 
-                    perspiciatis explicabo necessitatibus cumque officiis. 
-                    Minima illum a sint deleniti.
-                </p>
-
-            </div>
-            <div class="comment-card">
-
-                <h2>Leandro de jesus cavalcante da silva</h2>
-
-                <h3>email@gmail.com</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Ullam a sit architecto, 
-                    reiciendis at, 
-                    veniam pariatur facere quibusdam nisi porro, 
-                    perspiciatis explicabo necessitatibus cumque officiis. 
-                    Minima illum a sint deleniti.
-                </p>
-
-            </div>
-            <div class="comment-card">
-
-                <h2>Leandro de jesus cavalcante da silva</h2>
-
-                <h3>email@gmail.com</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Ullam a sit architecto, 
-                    reiciendis at, 
-                    veniam pariatur facere quibusdam nisi porro, 
-                    perspiciatis explicabo necessitatibus cumque officiis. 
-                    Minima illum a sint deleniti.
-                </p>
-
-            </div>
-            <div class="comment-card">
-
-                <h2>Leandro de jesus cavalcante da silva</h2>
-
-                <h3>email@gmail.com</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Ullam a sit architecto, 
-                    reiciendis at, 
-                    veniam pariatur facere quibusdam nisi porro, 
-                    perspiciatis explicabo necessitatibus cumque officiis. 
-                    Minima illum a sint deleniti.
-                </p>
-
-            </div>
-            <div class="comment-card">
-
-                <h2>Leandro de jesus cavalcante da silva</h2>
-
-                <h3>email@gmail.com</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Ullam a sit architecto, 
-                    reiciendis at, 
-                    veniam pariatur facere quibusdam nisi porro, 
-                    perspiciatis explicabo necessitatibus cumque officiis. 
-                    Minima illum a sint deleniti.
-                </p>
-
-            </div>
+            
 
         </section>
 
         <div class="comment-btn">
             <a href="/views/Contato/contato.html">Voltar</a>
-            <button>Deletar</button>
+            <button onclick="deletar()" >Deletar</button>
+            <button onclick="recuperarMensagem()" >Listar</button>
         </div>
     </main>
 
@@ -130,5 +57,7 @@
 
     <!--Script para adicionar os components do menu-->
     <script src="/js/component.js"></script>
+    <script src="/js/messages/msg.js"></script>
+
 </body>
 </html>

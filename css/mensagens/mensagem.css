@@ -151,3 +151,7 @@ body{
     color: white;
     background-color: var(--Cor-BG);
 }
+
+.nav-bar ul li:nth-child(7)>a{
+    background-color: var(--Cor-BG);
+}

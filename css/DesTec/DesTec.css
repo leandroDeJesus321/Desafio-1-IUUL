@@ -100,6 +100,10 @@ body{
     color: var(--Cor-icon);
 }
 
+.nav-bar ul li:nth-child(6)>a{
+    background-color: var(--Cor-BG);
+}
+
 /*===================== RESPONSIVIDADE =======================*/
 
 @media (max-width: 768px) {

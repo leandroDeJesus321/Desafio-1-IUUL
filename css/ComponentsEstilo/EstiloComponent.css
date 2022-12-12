@@ -87,6 +87,7 @@ body{
 
     color: var(--Cor-Texto);
     font-size: 0.9em;
+    font-weight: lighter;
 }
 
 .nav-bar ul li a:hover{
@@ -179,11 +180,7 @@ body{
     color: var(--Cor-BG);
 }
 
-.active{
-    background-color: var(--Cor-BG);
-}
-
-.nav-list > .active > a{
+.marcado{
     background-color: var(--Cor-BG);
 }
 

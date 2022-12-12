@@ -148,6 +148,10 @@ body{
     background-color: var(--BTN-BG);
 }
 
+.nav-bar ul li:nth-child(7)>a{
+    background-color: var(--Cor-BG);
+}
+
 /*=============== RESPONSIVIDADE ======================*/
 
 @media (max-width: 768px) {

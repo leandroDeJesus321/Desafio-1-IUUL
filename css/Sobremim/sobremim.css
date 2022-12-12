@@ -67,6 +67,11 @@
     margin: 0 auto;
 }
 
+.nav-bar ul li:nth-child(2)>a{
+    background-color: var(--Cor-BG);
+}
+
+
 @media (max-width: 768px) {
     .container{
         grid-template-columns: 100%;

@@ -73,6 +73,12 @@ Ajustando título do card: tamanho, peso, margem entre o texto e linha separando
     margin-left: 1.5em;
 }
 
+
+.nav-bar ul li:nth-child(4)>a{
+    background-color: var(--Cor-BG);
+}
+
+
 /*============= RESPONSIVIDADE =============*/
 
 @media (max-width: 768px) {
