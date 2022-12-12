@@ -194,6 +194,15 @@ body{
 /*Link das redes sociais*/
 
 @media (max-width: 768px) {
+    .menu{
+        height: 3em;
+
+        position: fixed;
+        top: 0px;
+
+        background-color: var(--Cor-BG-B);
+        
+    }
     .nav-bar{
         display: none;
     }
@@ -284,7 +293,7 @@ body{
         position: fixed;
 
         z-index: 1;
-        top: 4em;
+        top: 3em;
         right: -9.5%;
         
         border: 1.5px solid var(--Cor-BG);

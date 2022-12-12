@@ -55,6 +55,7 @@ function armazenarMensagens(){
 
                 //Salvando objeto no sessionStorage
                 sessionStorage.setItem(gerarChave(), JSON.stringify(email))
+                alert("Mensagem enviada com sucesso!")
 
             }else{
 
@@ -76,15 +77,18 @@ function recuperarMensagem(){
     let keys = Object.keys(sessionStorage)
 
     //Percorre todas as chaves e busca cada objeto que existe por lá
+    if(keys !== Number){
+        console.log("Atenção, não há mensagens para serem exibidas");
+    }
 
     for(let i of keys){
 
         
         let getEmail = sessionStorage.getItem(i)
         console.log(getEmail)
-        if(getEmail !== true){
+        if(getEmail == 'true'){
             
-            alert("Atenção, não há mensagens para serem exibidas!");
+            console.log("Atenção, não há mensagens para serem exibidas!");
 
         }else{
             let emailObject = JSON.parse(getEmail)
